@@ -1,0 +1,36 @@
+{
+  "detection_parameters": {
+    "confidence_threshold": 0.5,
+    "iou_threshold": 0.45,
+    "max_detections": 300
+  },
+  "model_settings": {
+    "model": "yolov8n.pt",
+    "device": "cpu",
+    "auto_download": true
+  },
+  "image_settings": {
+    "max_width": 1280,
+    "max_height": 720,
+    "save_annotated": true,
+    "output_format": "jpg"
+  },
+  "video_settings": {
+    "max_width": 1280,
+    "max_height": 720,
+    "save_processed": true,
+    "output_format": "mp4"
+  },
+  "logging": {
+    "level": "INFO",
+    "log_file": "logs/detection.log",
+    "max_log_size_mb": 10,
+    "backup_count": 5
+  },
+  "analytics": {
+    "track_history": true,
+    "export_csv": true,
+    "export_json": true,
+    "save_path": "data/"
+  }
+}
